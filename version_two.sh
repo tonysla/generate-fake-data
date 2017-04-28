@@ -2,15 +2,17 @@
 
 # create variables to generate name, address & both
 fake_name=$(faker name -r 100)
+# create fake names
 fake_address=$(faker address -r 100)
+# create fake name & address
 name_address=$(faker profile name,address -r 100)
 
 # loop through fake_name variable to 
 # sort names in rows
 for nome in "$fake_name"
 do
-echo "$nome" > name.txt
-echo "$nome" > name.csv
+      echo "$nome" > name.txt
+      echo "$nome" > name.csv
 done
 
 # same as above
@@ -25,7 +27,7 @@ done
 # writing the files.
 for adr in "$name_address"
 do
-echo "$adr" > name_address.txt
-echo "$adr" > name_address.csv
+      echo "$adr" > name_address.txt
+      echo "$adr" > name_address.csv
 done
 
