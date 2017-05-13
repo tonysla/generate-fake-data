@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # create variables to generate name, address & both
+# generate fake names
 fake_name=$(faker name -r 100)
-# create fake names
+# generate fake address
 fake_address=$(faker address -r 100)
 # create fake name & address
 name_address=$(faker profile name,address -r 100)
